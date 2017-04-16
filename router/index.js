@@ -12,7 +12,7 @@ router.use(cors());
 router.use(bodyParser.urlencoded({ extended: false }))
 router.use(bodyParser.json())
 
-mongoose.connect(`mongodb://${MONGODB?MONGODB:'127.0.0.1:27017'}/db_kingkan`);
+mongoose.connect(`mongodb://${MONGODB?MONGODB:'127.0.0.1:27017'}/db_touno`);
 mongoose.Promise = global.Promise;
 
 router.get('/search', (req, res) => {
